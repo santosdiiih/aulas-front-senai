@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    
+<head>    
     <meta charset="UTF-8">
     <!-- Responsavel pela responsividade do site -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,10 +46,8 @@
             width: 80px;
             height: 30px;
             margin-left: 160px;
-        }
-        
-    </style>
-    
+        }        
+    </style>   
 </head>
 <body>
     <div id="formulario">        
@@ -81,10 +78,16 @@
                 <input type="button" id="botao" value="Calcular" name="botao">
             </div>
             <div id="entradaDeDados">
-                <label> Situação:
-                    <input type="text" id="situacao" value="" name="" disabled>
+                <label> 
+                    <input type="text" id="situacao" value="" name="recebeNome" disabled>
                 </label>
-            </div>      
+                <div id="entradaDeDados">
+                    <label> Situação:
+                        <input type="text" id="situacao" value="" name="" disabled>
+                    </label>
+                </div>    
+            </div>
+                  
     </div>
     <!-- chamando o arquivo js na pagina -->
     <script src="script.js"></script>
