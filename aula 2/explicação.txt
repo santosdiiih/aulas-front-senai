@@ -1,0 +1,51 @@
+// alert("Ola Mundo");
+
+// function msg(){
+//     if (true){
+//         var nome = "Ingrid"
+//     }
+// }
+// alert(nome);
+
+const nome = "Ingrid";
+const idade = 19;
+const teste = true;
+const produto = {produto: "mouse", quantidade:"45"};
+const somar = () => 3 + 3;
+
+console.log(typeof(nome));
+console.log(typeof(idade));
+console.log(typeof(teste));
+console.log(typeof(produto));
+console.log(typeof(somar));
+
+
+const cidade = "itapevi";
+const estado = 'São Paulo';
+// template string
+const pais = `br ${estado}`;
+
+console.log("Minha cidade é:", cidade);
+console.log("Meu estado:", estado);
+console.log("Meu pais é:", pais);
+
+let nota = 8;
+
+// incrementa depois da execusão
+console.log(nota++);
+// incrementa antes da execusão
+console.log(++nota);
+
+
+
+// sempre que for utilizar uma variavel ligada ao html utilizamos o $antes do nome da variavel 
+// o alerte serve para enviar uma mensagem de "alerta" para a pagina inicial 
+// para exibir mensagem no console utilizamos o console.log()
+// existem tres tipos de variaveis sendo var que possibilita a declaração da variavel diversas vezes
+// a let que não possibilita declarar a variavel mais de uma vez porem permite trocar o valor da variavel
+// e a const que não permite nem declarar nem trocar seu valor
+// para fazer uma exponenciação utilizamos o ** 
+
+
+site para tirar duvidas
+https://developer.mozilla.org/pt-BR/

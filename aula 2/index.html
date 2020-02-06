@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <!-- Responsavel pela responsividade do site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Aula 02 de JavaScript </title>
+    <style>
+        h1, body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #formulario{
+            width: 400px;
+            height: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            border: solid 2px black;            
+        }
+        #entradaDeDados{
+            width: inherit;
+            height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+        h1{ 
+            box-sizing: border-box;
+            padding-top: 5px;
+            width: inherit;
+            height: inherit;           
+            text-align: center;
+            margin-bottom: 20px;            
+        }
+        #titulo{
+            width: inherit;
+            height: 60px;
+            background-color: black;
+            color: white;
+        }
+        #botao{
+            width: 80px;
+            height: 30px;
+            margin-left: 160px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div id="formulario">        
+            <div id="titulo">
+                <h1> Controle de notas </h1>
+            </div>
+            <div id="entradaDeDados">
+                <label for=""> Nome: 
+                    <input type="text" id="nome" value="">
+                </label>
+            </div>
+            <div id="entradaDeDados">
+                <label for=""> Nota 1:
+                    <input type="text" id="nota1" value="">
+                </label>
+            </div>
+            <div id="entradaDeDados">
+                <label for=""> Nota 2:
+                    <input type="text" id="nota2" value="">
+                </label>
+            </div>
+            <div id="entradaDeDados">
+                <label for=""> Media:
+                    <input type="text" id="media" value="" disabled>
+                </label>
+            </div>
+            <div>
+                <input type="button" id="botao" value="Calcular" name="botao">
+            </div>
+            <div id="entradaDeDados">
+                <label> Situação:
+                    <input type="text" id="situacao" value="" name="" disabled>
+                </label>
+            </div>      
+    </div>
+    <!-- chamando o arquivo js na pagina -->
+    <script src="script.js"></script>
+</body>
+</html>
