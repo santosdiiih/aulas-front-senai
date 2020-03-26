@@ -1,0 +1,25 @@
+ funcao que ira receber uma promise 
+ const f1 = new Promise ( ( resolve, reject ) => {
+     let cont = 0;
+     let texto = '';
+
+     if (cont < 0 ){
+         reject ( 'erro de contador' );
+     }
+
+     while ( cont < 10 ){
+         texto += cont;
+         cont ++;
+     }
+     resolve (texto);
+ } )
+
+ console.log( 'teste 1' );
+ f1.then ( res => console.log (res))
+     .catch ( erro => console.log ( erro ));
+ console.log( 'teste 3' );
+
+ promises sao formas de criar codigos assincronos, varias trechos do codigo sendo execultado ao 
+ mesmo tempo 
+ o then é como ele é resolvido no sistema 
+ catch trabalha os erros 
