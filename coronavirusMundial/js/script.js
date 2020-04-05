@@ -2,7 +2,7 @@
 
 //Banco de dados que será alimentado pela API
 let BD = [{
-    "uf": "brazil",
+    "uf": "Country",
     "suspeitos": "<div class='spinner blue'></div>",
     "confirmados": "<div class='spinner yellow'></div>",
     "mortes": "<div class='spinner red'></div>",
@@ -54,13 +54,6 @@ const getCoronaMundo = async () => {
 }
 
 const getCoronaState = async () => {
-    //const url = 'http://covid19-brazil-api.now.sh/api/report/v1/';
-    // const url = 'https://covid19.mathdro.id/api/recovered';
-
-    // const getApi = await fetch(url);
-    // const json = await getApi.json();
-    // BD = await json;
-
 
     fetch("https://covid-193.p.rapidapi.com/statistics", {
         "method": "GET",
