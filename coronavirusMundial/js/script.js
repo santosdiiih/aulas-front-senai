@@ -94,8 +94,8 @@ const findState = (evento) => {
 
     const state = {
         "uf": getState[0].country,
-        "suspeitos": getState[0].cases.new,
-        "confirmados": getState[0].cases.total,
+        "suspeitos": getState[0].cases.active,
+        "confirmados": getState[0].cases.critical,
         "mortes": getState[0].deaths.total,
     }
     showData(state);
