@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+.spinner{
+    width: 30px;
+    height: 30px;
+    
+    animation: spin 2s linear infinite;
+    border-radius: 50%;
+}
+.blue{
+    border: solid 5px lightblue;
+    border-top-color: blue;
+}
+.red{
+    border: solid 5px salmon;
+    border-top-color: red;
+}
+.yellow{
+    border: solid 5px lightyellow;
+    border-top-color: yellow;
+}
+
+/* ANIMAÇÃO  */
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
