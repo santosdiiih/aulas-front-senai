@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+main {
+    width: 100%;
+    height: 450px;
+    background-color: brown;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: chocolate;
+    text-align: center;
+}
+
+#conteudo {
+    width: inherit;
+    height: auto;
+    min-height: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#card {
+    width: 210px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nome {
+    width: 100px;
+    height: 60px;
+    border: solid 1px black;
+}
+
+#aliancas {
+    width: 150px;
+    height: auto;
+    min-height: 150px;
+}
+
+#personagem {
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+}
