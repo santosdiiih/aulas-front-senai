@@ -1,4 +1,3 @@
-const personId = 15;
 const getrawgio = async(name, image, aliancas) => {
 
     const panel = document.createElement('div');
@@ -42,8 +41,36 @@ const exibeDados = async() => {
 
         getrawgio(name, image, aliancas);
     }
+}
+exibeDados();
+
+const buscaApi = async() => {
+
+    const inputName = document.getElementById('txtbuscar').value;
+
+
+    const url = `https://www.superheroapi.com/api.php/688375641946535/search/${inputName}`;
+    const getApi = await fetch(url);
+    const json = await getApi.json();
+    const dados = await json.results[0];
+
+    var name = await dados.name;
+    var image = await dados.image.url;
+    var aliancas = await dados.biography.aliases;
+
+    document.getElementById('conteudo').innerHTML = "";
+
+    getrawgio(name, image, aliancas);
+
+    console.log(dados);
+
+
+
+
 
 
 
 }
-exibeDados();
+
+const $imgBuscar = document.getElementById("imgBuscar");
+$imgBuscar.addEventListener('click', buscaApi);

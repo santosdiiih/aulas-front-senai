@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title> Semáforo</title>
+        <meta charset="utf-8" /> 
+        <style>
+            #container{
+                width: 400px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                border: solid 1px black;
+            }
+            #imagem-semaforo{
+                margin-bottom: 20px;
+                border: solid 1px black;
+            }
+            #imagem-semaforo img{
+                margin-left: 100px;
+            }
+            #entradaDeDados input{
+                margin-left: 20px;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="imagem-semaforo">
+                <img src="./img/desligado.png" id="img"/>
+            </div>
+            <div id="entradaDeDados">
+                <input type="button" value="vermelho" id="vermelho">
+                <input type="button" value="amarelo" id="amarelo">
+                <input type="button" value="verde" id="verde">
+                <input type="button" value="automatico" id="automatico">
+            </div>
+        </div>        
+        <script src="script.js"></script>
+    </body> 
+</html>
