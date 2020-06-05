@@ -1,4 +1,4 @@
-const getrawgio = async(name, image, aliancas) => {
+const insertDados = async(name, image, aliancas) => {
 
     const panel = document.createElement('div');
 
@@ -39,7 +39,7 @@ const exibeDados = async() => {
         // console.log(name);
         // console.log(aliancas);
 
-        getrawgio(name, image, aliancas);
+        insertDados(name, image, aliancas);
     }
 }
 exibeDados();
@@ -60,15 +60,9 @@ const buscaApi = async() => {
 
     document.getElementById('conteudo').innerHTML = "";
 
-    getrawgio(name, image, aliancas);
+    insertDados(name, image, aliancas);
 
     console.log(dados);
-
-
-
-
-
-
 
 }
 
