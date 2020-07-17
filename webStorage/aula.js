@@ -7,11 +7,7 @@ const $inputElement = document.querySelector('#inputText');
 
 
 // array 
-const lista = [
-    '1',
-    '2',
-    '3'
-];
+const lista = JSON.parse(localStorage.getItem('list_todos')) || [];
 
 // variavel que recebe a lista e exibe em tela 
 const criaLista = () => {
@@ -38,6 +34,12 @@ const criaLista = () => {
         const textLink = document.createTextNode(' Excluir');
 
         linkExcluir.appendChild(textLink);
+
+        // cria a varial pos e pesquisa no todo o indice do elemento
+        var pos = lista.indexOf(todo);
+
+        // chama a funcao que deleta o todo com o click
+        linkExcluir.setAttribute('onclick', 'deletTodo(' + pos + ')');
 
         // definindo o listElement com filho do listElement
         listElement.appendChild(listText);
@@ -66,6 +68,21 @@ const recebeInput = () => {
 
     // chama a funcao que cria a lista 
     criaLista();
+    // funcao que grava no localstorage
+    saveStorage();
+}
+
+// funcao que deleta o conteudo da lista 
+const deletTodo = (pos) => {
+    lista.splice(pos, 1);
+    criaLista();
+    saveStorage();
+}
+
+// funcao que salva os dados no localstorage
+const saveStorage = () => {
+    // transforma o array em uma string e manda para o localStorage
+    localStorage.setItem('list_todos', JSON.stringify(lista));
 }
 
 
